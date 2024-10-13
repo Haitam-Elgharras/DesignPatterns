@@ -1,11 +1,10 @@
 package composite;
 
-public abstract class Component {
+public abstract class FileSystemItem {
     protected String name ;
     protected int level ;
-    public Component(String name){
+    public FileSystemItem(String name){
         this.name=name;
     }
     public abstract void print();
-
 }

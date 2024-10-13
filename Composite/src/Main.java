@@ -12,6 +12,9 @@ public class Main {
         Folder folder3 = (Folder) folder.add(new Folder("dtos"));
         folder1.add(new File("Customer.java"));
         folder1.add(new File("BankAccount.java"));
+        Folder folder4 = (Folder) folder1.add(new Folder("subEntities"));
+        folder4.add(new File("Address.java"));
+
         folder.print();
     }
 }

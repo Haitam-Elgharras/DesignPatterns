@@ -3,8 +3,8 @@ package composite;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Folder extends Component{
-    private List<Component> components= new ArrayList<>();
+public class Folder extends FileSystemItem {
+    private List<FileSystemItem> fileSystemItems = new ArrayList<>();
     public Folder(String name) {
         super(name);
     }
@@ -17,14 +17,14 @@ public class Folder extends Component{
 
         }
         System.out.println(tab +"Folder : " + name);
-        for (Component c : components){
+        for (FileSystemItem c : fileSystemItems){
             c.print();
         }
 
     }
-    public Component add(Component comp){
-        comp.level=this.level +1 ;
-         this.components.add(comp);
-         return comp ;
+    public FileSystemItem add(FileSystemItem comp){
+        comp.level=this.level +1;
+        this.fileSystemItems.add(comp);
+        return comp;
     }
 }

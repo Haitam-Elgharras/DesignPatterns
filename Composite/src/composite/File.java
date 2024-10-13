@@ -1,6 +1,6 @@
 package composite;
 
-public class File extends Component{
+public class File extends FileSystemItem {
 
     public File(String name) {
         super(name);
@@ -11,9 +11,8 @@ public class File extends Component{
         String tab = "";
         for (int i =0 ; i<level;i++){
             tab=tab+"\t";
-
         }
-        System.out.println(tab+"File"+name);
+        System.out.println(tab+"File :"+name);
 
     }
 }
