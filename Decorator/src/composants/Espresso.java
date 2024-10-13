@@ -1,6 +1,6 @@
 package composants;
 
-public class Espresso extends Boisson{
+public class Espresso extends Boisson {
 
     public Espresso(){
         description = "Espresso "  ;

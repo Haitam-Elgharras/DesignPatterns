@@ -12,3 +12,10 @@ the Decorator pattern allows behavior to be added to individual objects, dynamic
 ### Dynamic Composition:
 - Decorators can be stacked on top of each other, each adding new behavior.
 - This allows for flexible and reusable code, as behaviors can be combined in various ways.
+
+### Notes:
+- The decorator extends the original class, allowing us to pass a decorated object to any method that expects an instance of the original class. Without extending the original class, chaining multiple decorators would not be possible.
+- The decorator has a reference to the original component, so all the decorators know what they are decorating.
+
+### UML Diagram
+![Decorator Design Pattern](Decorator_UML_class_diagram.svg.png)
